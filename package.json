@@ -3,17 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "engines": { 
-    "node": "18.17"
-},
   "scripts": {
     "web": "vite",
-    "server": " env YTDL_NO_UPDATRE=1 node --watch --no-warnings server/index.js"
-  },
-  "devDependencies": {
-    "tsup": "^7.2.0",
-    "tsx": "^3.12.10",
-    "vite": "^4.4.5"
+    "server": "env YTDL_NO_UPDATE=1 node --watch --no-warnings server/index.js"
   },
   "dependencies": {
     "@xenova/transformers": "^2.6.0",
@@ -23,7 +15,9 @@
     "ffmpeg-static": "^5.2.0",
     "fluent-ffmpeg": "^2.1.2",
     "node-wav": "^0.0.2",
-    "typescript": "^5.2.2",
     "ytdl-core": "4.10.0"
+  },
+  "devDependencies": {
+    "vite": "^4.4.5"
   }
 }
